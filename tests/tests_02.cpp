@@ -22,3 +22,9 @@ TEST(sentenceResearcher, nothingToReturn) {
 	EXPECT_EQ(Solution::getUniqueSymbolFromSentence(std::string("to be nor not to be")), '\0');
 
 }
+
+TEST(assignment, Stroustrup) {
+
+	EXPECT_EQ(Solution::getUniqueSymbolFromSentence(std::string("C makes it easy for you to shoot yourself in the foot. C++ makes that harder, but when you do, it blows away your whole leg. (с) Bjarne Stroustrup")), 'e');
+
+}
